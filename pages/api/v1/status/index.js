@@ -10,7 +10,6 @@ async function status(req, res) {
     values: [databaseName],
   });
 
-  console.log(databaseOpenedConnections.rows)
   res.status(200).json({
     update_at: updatedAt,
     dependencies: {
